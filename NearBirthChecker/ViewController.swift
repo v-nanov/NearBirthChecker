@@ -47,6 +47,12 @@ class ViewController: UITableViewController {
 
     @IBAction func start(_ sender: Any) {
         guard let realm = try? Realm() else { return }
+        if let last = self.times?.last, last.end == nil {
+            try? realm.write {
+                last.start = NSDate()
+            }
+            return
+        }
         let time = Time()
         time.start = NSDate()
         try? realm.write {
