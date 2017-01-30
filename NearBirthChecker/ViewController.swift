@@ -11,17 +11,52 @@ import RealmSwift
 
 class ViewController: UITableViewController {
 
-    @IBOutlet weak var startStopButton: UIBarButtonItem!
+    enum TimeState {
+        case needStart
+        case needEnd
+    }
+
+    var startItems: [UIBarButtonItem]?
+    var endItems: [UIBarButtonItem]?
+
+    var startItem: UIBarButtonItem!
+    var endItem: UIBarButtonItem!
+
     var timesToken: NotificationToken?
     var times: Results<Time>?
+
+    var timeState: TimeState {
+        guard let last = self.times?.last else {
+            self.setToolbarItems(self.startItems, animated: true)
+            return .needStart
+        }
+        if last.end == nil {
+            self.setToolbarItems(self.endItems, animated: true)
+            return .needEnd
+        } else {
+            self.setToolbarItems(self.startItems, animated: true)
+            return .needStart
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.startItems = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+                           UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(toggle(_:))),
+                           UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)]
+        self.endItems = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+                           UIBarButtonItem(barButtonSystemItem: .pause, target: self, action: #selector(toggle(_:))),
+                           UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)]
+
         guard let realm = try? Realm() else { return }
         self.times = realm.objects(Time.self).sorted(byKeyPath: "start")
-        self.timesToken = self.times?.addNotificationBlock({ (change) in
-            self.tableView.reloadData()
+        self.timesToken = self.times?.addNotificationBlock({
+            [weak self] (change) in
+            self?.tableView.reloadData()
+            let _ = self?.timeState
         })
+        let _ = self.timeState
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,27 +80,25 @@ class ViewController: UITableViewController {
         return cell
     }
 
-    @IBAction func start(_ sender: Any) {
+    @IBAction func toggle(_ sender: UIBarButtonItem) {
         guard let realm = try? Realm() else { return }
-        if let last = self.times?.last, last.end == nil {
-            try? realm.write {
-                last.start = NSDate()
-            }
-            return
-        }
-        let time = Time()
-        time.start = NSDate()
-        try? realm.write {
-            realm.add(time)
-        }
-    }
 
-    @IBAction func end(_ sender: Any) {
-        guard let realm = try? Realm() else { return }
-        guard let lastTime: Time = times?.last else { return }
-        try? realm.write {
-            lastTime.end = NSDate()
+        switch self.timeState {
+        case .needStart:
+            let time = Time()
+            time.start = NSDate()
+            try? realm.write {
+                realm.add(time)
+            }
+        case .needEnd:
+            if let last = self.times?.last {
+                try? realm.write {
+                    last.end = NSDate()
+                }
+                return
+            }
         }
+
     }
     
     @IBAction func clear(_ sender: Any) {
