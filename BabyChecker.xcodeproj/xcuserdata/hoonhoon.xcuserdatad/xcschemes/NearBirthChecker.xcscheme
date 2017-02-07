@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF162FA41E3F853900E91107"
-               BuildableName = "NearBirthChecker.app"
-               BlueprintName = "NearBirthChecker"
-               ReferencedContainer = "container:NearBirthChecker.xcodeproj">
+               BuildableName = "BabyChecker.app"
+               BlueprintName = "BabyChecker"
+               ReferencedContainer = "container:BabyChecker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF162FB81E3F853A00E91107"
-               BuildableName = "NearBirthCheckerTests.xctest"
-               BlueprintName = "NearBirthCheckerTests"
-               ReferencedContainer = "container:NearBirthChecker.xcodeproj">
+               BuildableName = "BabyCheckerTests.xctest"
+               BlueprintName = "BabyCheckerTests"
+               ReferencedContainer = "container:BabyChecker.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF162FC31E3F853A00E91107"
-               BuildableName = "NearBirthCheckerUITests.xctest"
-               BlueprintName = "NearBirthCheckerUITests"
-               ReferencedContainer = "container:NearBirthChecker.xcodeproj">
+               BuildableName = "BabyCheckerUITests.xctest"
+               BlueprintName = "BabyCheckerUITests"
+               ReferencedContainer = "container:BabyChecker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF162FA41E3F853900E91107"
-            BuildableName = "NearBirthChecker.app"
-            BlueprintName = "NearBirthChecker"
-            ReferencedContainer = "container:NearBirthChecker.xcodeproj">
+            BuildableName = "BabyChecker.app"
+            BlueprintName = "BabyChecker"
+            ReferencedContainer = "container:BabyChecker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF162FA41E3F853900E91107"
-            BuildableName = "NearBirthChecker.app"
-            BlueprintName = "NearBirthChecker"
-            ReferencedContainer = "container:NearBirthChecker.xcodeproj">
+            BuildableName = "BabyChecker.app"
+            BlueprintName = "BabyChecker"
+            ReferencedContainer = "container:BabyChecker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF162FA41E3F853900E91107"
-            BuildableName = "NearBirthChecker.app"
-            BlueprintName = "NearBirthChecker"
-            ReferencedContainer = "container:NearBirthChecker.xcodeproj">
+            BuildableName = "BabyChecker.app"
+            BlueprintName = "BabyChecker"
+            ReferencedContainer = "container:BabyChecker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

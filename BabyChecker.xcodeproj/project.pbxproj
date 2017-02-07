@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FF162FA91E3F853900E91107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FA81E3F853900E91107 /* AppDelegate.swift */; };
-		FF162FAB1E3F853900E91107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FAA1E3F853900E91107 /* ViewController.swift */; };
 		FF162FAE1E3F853900E91107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF162FAC1E3F853900E91107 /* Main.storyboard */; };
 		FF162FB01E3F853900E91107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF162FAF1E3F853900E91107 /* Assets.xcassets */; };
 		FF162FB31E3F853900E91107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF162FB11E3F853900E91107 /* LaunchScreen.storyboard */; };
 		FF162FBE1E3F853A00E91107 /* NearBirthCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FBD1E3F853A00E91107 /* NearBirthCheckerTests.swift */; };
 		FF162FC91E3F853A00E91107 /* NearBirthCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FC81E3F853A00E91107 /* NearBirthCheckerUITests.swift */; };
 		FF162FDD1E3F86B100E91107 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FDC1E3F86B100E91107 /* Time.swift */; };
-		FF162FE01E3F875D00E91107 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FDF1E3F875D00E91107 /* TimeCell.swift */; };
 		FF162FE11E3F8E2800E91107 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD71E3F869100E91107 /* Realm.framework */; };
 		FF162FE21E3F8E2800E91107 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD71E3F869100E91107 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF162FE31E3F8E2800E91107 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD81E3F869100E91107 /* RealmSwift.framework */; };
 		FF162FE41E3F8E2800E91107 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD81E3F869100E91107 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF470D5D1E47174B00427792 /* ScheduleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D5C1E47174B00427792 /* ScheduleViewer.swift */; };
+		FF470D5F1E47175700427792 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D5E1E47175700427792 /* SchedulePresenter.swift */; };
+		FF470D651E471A5C00427792 /* Identifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D641E471A5C00427792 /* Identifierable.swift */; };
+		FF470D671E471B5E00427792 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D661E471B5E00427792 /* Schedule.swift */; };
+		FF470D6A1E4749BB00427792 /* VIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D691E4749BB00427792 /* VIPER.swift */; };
+		FFFAFF151E4706A500890062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAFF141E4706A500890062 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,23 +59,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FF162FA51E3F853900E91107 /* NearBirthChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearBirthChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF162FA51E3F853900E91107 /* BabyChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF162FA81E3F853900E91107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF162FAA1E3F853900E91107 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF162FAD1E3F853900E91107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF162FAF1E3F853900E91107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF162FB21E3F853900E91107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF162FB41E3F853900E91107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF162FB91E3F853A00E91107 /* NearBirthCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearBirthCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF162FB91E3F853A00E91107 /* BabyCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF162FBD1E3F853A00E91107 /* NearBirthCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBirthCheckerTests.swift; sourceTree = "<group>"; };
 		FF162FBF1E3F853A00E91107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF162FC41E3F853A00E91107 /* NearBirthCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearBirthCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF162FC41E3F853A00E91107 /* BabyCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF162FC81E3F853A00E91107 /* NearBirthCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBirthCheckerUITests.swift; sourceTree = "<group>"; };
 		FF162FCA1E3F853A00E91107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF162FD71E3F869100E91107 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		FF162FD81E3F869100E91107 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		FF162FDC1E3F86B100E91107 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		FF162FDF1E3F875D00E91107 /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		FF470D5C1E47174B00427792 /* ScheduleViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewer.swift; sourceTree = "<group>"; };
+		FF470D5E1E47175700427792 /* SchedulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
+		FF470D641E471A5C00427792 /* Identifierable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifierable.swift; sourceTree = "<group>"; };
+		FF470D661E471B5E00427792 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		FF470D691E4749BB00427792 /* VIPER.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPER.swift; sourceTree = "<group>"; };
+		FFFAFF141E4706A500890062 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +123,9 @@
 		FF162FA61E3F853900E91107 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF162FA51E3F853900E91107 /* NearBirthChecker.app */,
-				FF162FB91E3F853A00E91107 /* NearBirthCheckerTests.xctest */,
-				FF162FC41E3F853A00E91107 /* NearBirthCheckerUITests.xctest */,
+				FF162FA51E3F853900E91107 /* BabyChecker.app */,
+				FF162FB91E3F853A00E91107 /* BabyCheckerTests.xctest */,
+				FF162FC41E3F853A00E91107 /* BabyCheckerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,10 +133,11 @@
 		FF162FA71E3F853900E91107 /* NearBirthChecker */ = {
 			isa = PBXGroup;
 			children = (
-				FF162FDE1E3F874B00E91107 /* Cells */,
+				FF470D631E471A3100427792 /* Protocol */,
+				FF470D601E4719FA00427792 /* Schedule */,
 				FF162FDB1E3F86A500E91107 /* Realm */,
 				FF162FA81E3F853900E91107 /* AppDelegate.swift */,
-				FF162FAA1E3F853900E91107 /* ViewController.swift */,
+				FFFAFF141E4706A500890062 /* ViewController.swift */,
 				FF162FAC1E3F853900E91107 /* Main.storyboard */,
 				FF162FAF1E3F853900E91107 /* Assets.xcassets */,
 				FF162FB11E3F853900E91107 /* LaunchScreen.storyboard */,
@@ -168,24 +177,35 @@
 			isa = PBXGroup;
 			children = (
 				FF162FDC1E3F86B100E91107 /* Time.swift */,
+				FF470D661E471B5E00427792 /* Schedule.swift */,
 			);
 			name = Realm;
 			sourceTree = "<group>";
 		};
-		FF162FDE1E3F874B00E91107 /* Cells */ = {
+		FF470D601E4719FA00427792 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				FF162FDF1E3F875D00E91107 /* TimeCell.swift */,
+				FF470D5C1E47174B00427792 /* ScheduleViewer.swift */,
+				FF470D5E1E47175700427792 /* SchedulePresenter.swift */,
 			);
-			name = Cells;
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		FF470D631E471A3100427792 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FF470D641E471A5C00427792 /* Identifierable.swift */,
+				FF470D691E4749BB00427792 /* VIPER.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF162FA41E3F853900E91107 /* NearBirthChecker */ = {
+		FF162FA41E3F853900E91107 /* BabyChecker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF162FCD1E3F853A00E91107 /* Build configuration list for PBXNativeTarget "NearBirthChecker" */;
+			buildConfigurationList = FF162FCD1E3F853A00E91107 /* Build configuration list for PBXNativeTarget "BabyChecker" */;
 			buildPhases = (
 				FF162FA11E3F853900E91107 /* Sources */,
 				FF162FA21E3F853900E91107 /* Frameworks */,
@@ -196,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = NearBirthChecker;
+			name = BabyChecker;
 			productName = NearBirthChecker;
-			productReference = FF162FA51E3F853900E91107 /* NearBirthChecker.app */;
+			productReference = FF162FA51E3F853900E91107 /* BabyChecker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF162FB81E3F853A00E91107 /* NearBirthCheckerTests */ = {
+		FF162FB81E3F853A00E91107 /* BabyCheckerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF162FD01E3F853A00E91107 /* Build configuration list for PBXNativeTarget "NearBirthCheckerTests" */;
+			buildConfigurationList = FF162FD01E3F853A00E91107 /* Build configuration list for PBXNativeTarget "BabyCheckerTests" */;
 			buildPhases = (
 				FF162FB51E3F853A00E91107 /* Sources */,
 				FF162FB61E3F853A00E91107 /* Frameworks */,
@@ -214,14 +234,14 @@
 			dependencies = (
 				FF162FBB1E3F853A00E91107 /* PBXTargetDependency */,
 			);
-			name = NearBirthCheckerTests;
+			name = BabyCheckerTests;
 			productName = NearBirthCheckerTests;
-			productReference = FF162FB91E3F853A00E91107 /* NearBirthCheckerTests.xctest */;
+			productReference = FF162FB91E3F853A00E91107 /* BabyCheckerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FF162FC31E3F853A00E91107 /* NearBirthCheckerUITests */ = {
+		FF162FC31E3F853A00E91107 /* BabyCheckerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF162FD31E3F853A00E91107 /* Build configuration list for PBXNativeTarget "NearBirthCheckerUITests" */;
+			buildConfigurationList = FF162FD31E3F853A00E91107 /* Build configuration list for PBXNativeTarget "BabyCheckerUITests" */;
 			buildPhases = (
 				FF162FC01E3F853A00E91107 /* Sources */,
 				FF162FC11E3F853A00E91107 /* Frameworks */,
@@ -232,9 +252,9 @@
 			dependencies = (
 				FF162FC61E3F853A00E91107 /* PBXTargetDependency */,
 			);
-			name = NearBirthCheckerUITests;
+			name = BabyCheckerUITests;
 			productName = NearBirthCheckerUITests;
-			productReference = FF162FC41E3F853A00E91107 /* NearBirthCheckerUITests.xctest */;
+			productReference = FF162FC41E3F853A00E91107 /* BabyCheckerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -266,7 +286,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF162FA01E3F853900E91107 /* Build configuration list for PBXProject "NearBirthChecker" */;
+			buildConfigurationList = FF162FA01E3F853900E91107 /* Build configuration list for PBXProject "BabyChecker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -279,9 +299,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF162FA41E3F853900E91107 /* NearBirthChecker */,
-				FF162FB81E3F853A00E91107 /* NearBirthCheckerTests */,
-				FF162FC31E3F853A00E91107 /* NearBirthCheckerUITests */,
+				FF162FA41E3F853900E91107 /* BabyChecker */,
+				FF162FB81E3F853A00E91107 /* BabyCheckerTests */,
+				FF162FC31E3F853A00E91107 /* BabyCheckerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,9 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF162FE01E3F875D00E91107 /* TimeCell.swift in Sources */,
+				FF470D6A1E4749BB00427792 /* VIPER.swift in Sources */,
+				FF470D5D1E47174B00427792 /* ScheduleViewer.swift in Sources */,
+				FF470D5F1E47175700427792 /* SchedulePresenter.swift in Sources */,
+				FF470D651E471A5C00427792 /* Identifierable.swift in Sources */,
 				FF162FDD1E3F86B100E91107 /* Time.swift in Sources */,
-				FF162FAB1E3F853900E91107 /* ViewController.swift in Sources */,
+				FFFAFF151E4706A500890062 /* ViewController.swift in Sources */,
+				FF470D671E471B5E00427792 /* Schedule.swift in Sources */,
 				FF162FA91E3F853900E91107 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,12 +370,12 @@
 /* Begin PBXTargetDependency section */
 		FF162FBB1E3F853A00E91107 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF162FA41E3F853900E91107 /* NearBirthChecker */;
+			target = FF162FA41E3F853900E91107 /* BabyChecker */;
 			targetProxy = FF162FBA1E3F853A00E91107 /* PBXContainerItemProxy */;
 		};
 		FF162FC61E3F853A00E91107 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF162FA41E3F853900E91107 /* NearBirthChecker */;
+			target = FF162FA41E3F853900E91107 /* BabyChecker */;
 			targetProxy = FF162FC51E3F853A00E91107 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +504,7 @@
 				);
 				INFOPLIST_FILE = NearBirthChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.BabyChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -497,7 +521,7 @@
 				);
 				INFOPLIST_FILE = NearBirthChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.BabyChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,7 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthCheckerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearBirthChecker.app/NearBirthChecker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyChecker.app/BabyChecker";
 			};
 			name = Debug;
 		};
@@ -529,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthCheckerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearBirthChecker.app/NearBirthChecker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyChecker.app/BabyChecker";
 			};
 			name = Release;
 		};
@@ -564,7 +588,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF162FA01E3F853900E91107 /* Build configuration list for PBXProject "NearBirthChecker" */ = {
+		FF162FA01E3F853900E91107 /* Build configuration list for PBXProject "BabyChecker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF162FCB1E3F853A00E91107 /* Debug */,
@@ -573,29 +597,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF162FCD1E3F853A00E91107 /* Build configuration list for PBXNativeTarget "NearBirthChecker" */ = {
+		FF162FCD1E3F853A00E91107 /* Build configuration list for PBXNativeTarget "BabyChecker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF162FCE1E3F853A00E91107 /* Debug */,
 				FF162FCF1E3F853A00E91107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FF162FD01E3F853A00E91107 /* Build configuration list for PBXNativeTarget "NearBirthCheckerTests" */ = {
+		FF162FD01E3F853A00E91107 /* Build configuration list for PBXNativeTarget "BabyCheckerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF162FD11E3F853A00E91107 /* Debug */,
 				FF162FD21E3F853A00E91107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FF162FD31E3F853A00E91107 /* Build configuration list for PBXNativeTarget "NearBirthCheckerUITests" */ = {
+		FF162FD31E3F853A00E91107 /* Build configuration list for PBXNativeTarget "BabyCheckerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF162FD41E3F853A00E91107 /* Debug */,
 				FF162FD51E3F853A00E91107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

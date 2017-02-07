@@ -1,108 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A7A-zx-drX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="onT-k0-VeX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Check-->
-        <scene sceneID="WKT-7c-9Zy">
+        <!--Tab Bar Controller-->
+        <scene sceneID="SnG-SB-vg7">
             <objects>
-                <tableViewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2NZ-Dd-m2c" customClass="ViewController" customModule="NearBirthChecker" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="CwB-8p-jzS">
-                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeCell" id="6jY-Sf-Rz5" customClass="TimeCell" customModule="NearBirthChecker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="69"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="6jY-Sf-Rz5" id="d8q-Xg-Z8a">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Cws-13-gx0">
-                                            <rect key="frame" x="21" y="11" width="343" height="45"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK5-iK-GK9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="45"/>
-                                                    <color key="backgroundColor" red="0.091109462082386017" green="0.65607482194900513" blue="0.65813034772872925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nN-Fz-afs">
-                                                    <rect key="frame" x="171.5" y="0.0" width="171.5" height="45"/>
-                                                    <color key="backgroundColor" red="0.6059601902961731" green="0.26615568995475769" blue="0.091889955103397369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="45" id="mox-5H-oTN"/>
-                                            </constraints>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Cws-13-gx0" secondAttribute="trailing" constant="8" id="QgD-CP-Cma"/>
-                                        <constraint firstItem="Cws-13-gx0" firstAttribute="centerY" secondItem="d8q-Xg-Z8a" secondAttribute="centerY" id="V1e-9O-EfP"/>
-                                        <constraint firstItem="Cws-13-gx0" firstAttribute="centerX" secondItem="d8q-Xg-Z8a" secondAttribute="centerX" id="Xga-Pz-kFJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Cws-13-gx0" secondAttribute="bottom" constant="3" id="iK0-4e-ThP"/>
-                                        <constraint firstItem="Cws-13-gx0" firstAttribute="top" secondItem="d8q-Xg-Z8a" secondAttribute="topMargin" constant="3" id="jt3-ug-5gv"/>
-                                        <constraint firstItem="Cws-13-gx0" firstAttribute="leading" secondItem="d8q-Xg-Z8a" secondAttribute="leadingMargin" constant="8" id="tRN-Nd-nVw"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="endlabel" destination="4nN-Fz-afs" id="dT4-yD-sAA"/>
-                                    <outlet property="startlabel" destination="tK5-iK-GK9" id="v41-yB-Up6"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="2NZ-Dd-m2c" id="nVe-dn-sK9"/>
-                            <outlet property="delegate" destination="2NZ-Dd-m2c" id="zMq-QD-6Ra"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Check" id="F8S-H2-dwD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="NoE-Bk-gnd">
-                            <connections>
-                                <action selector="clear:" destination="2NZ-Dd-m2c" id="1SY-8R-TSY"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f01-lN-Ntl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="onT-k0-VeX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1sl-Re-Zfh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ckd-MD-Cb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="375" y="256"/>
+            <point key="canvasLocation" x="-38" y="77"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="B0e-A2-VNc">
+        <!--View Controller-->
+        <scene sceneID="Syb-6N-gmP">
             <objects>
-                <navigationController toolbarHidden="NO" id="A7A-zx-drX" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="43y-A3-thn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="04K-ri-S0q">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GY-YP-iOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V8J-cI-3Bn" customClass="ViewController" customModule="BabyChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uUZ-KI-gmY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Voa-ce-gai"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDR-Ue-B93">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-L3-CD6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utu-2R-YaJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="MdU-Yu-yzF"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VW-G8-jAQ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="mmG-pK-QjQ">
+                                        <connections>
+                                            <action selector="addWithSender:" destination="V8J-cI-3Bn" id="oEO-H5-Pwe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3BT-SB-egs"/>
+                                    <barButtonItem systemItem="add" id="d7H-YA-vMp">
+                                        <connections>
+                                            <action selector="addWithSender:" destination="V8J-cI-3Bn" id="ULw-wg-mIE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="utu-2R-YaJ" secondAttribute="trailing" id="24h-z9-XXx"/>
+                            <constraint firstItem="LWr-L3-CD6" firstAttribute="leading" secondItem="GDR-Ue-B93" secondAttribute="leading" id="4TA-ef-0Nd"/>
+                            <constraint firstItem="utu-2R-YaJ" firstAttribute="leading" secondItem="GDR-Ue-B93" secondAttribute="leading" id="D9E-Lv-aXE"/>
+                            <constraint firstItem="Voa-ce-gai" firstAttribute="top" secondItem="LWr-L3-CD6" secondAttribute="bottom" id="EtP-I6-dfN"/>
+                            <constraint firstAttribute="trailing" secondItem="LWr-L3-CD6" secondAttribute="trailing" id="G2I-eb-0EP"/>
+                            <constraint firstItem="Voa-ce-gai" firstAttribute="top" secondItem="9VW-G8-jAQ" secondAttribute="bottom" id="GtA-9k-mbY"/>
+                            <constraint firstItem="9VW-G8-jAQ" firstAttribute="leading" secondItem="GDR-Ue-B93" secondAttribute="leading" id="XIX-gU-rYO"/>
+                            <constraint firstItem="LWr-L3-CD6" firstAttribute="top" secondItem="uUZ-KI-gmY" secondAttribute="bottom" id="cUr-se-kLl"/>
+                            <constraint firstItem="utu-2R-YaJ" firstAttribute="top" secondItem="uUZ-KI-gmY" secondAttribute="bottom" id="eve-79-iQ8"/>
+                            <constraint firstAttribute="trailing" secondItem="9VW-G8-jAQ" secondAttribute="trailing" id="f72-VM-SOy"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
                     <connections>
-                        <segue destination="2NZ-Dd-m2c" kind="relationship" relationship="rootViewController" id="eJQ-B4-nhs"/>
+                        <outlet property="navigationBar" destination="utu-2R-YaJ" id="5Xi-xc-9HM"/>
+                        <outlet property="textView" destination="LWr-L3-CD6" id="E3r-Mh-xw5"/>
+                        <outlet property="toolBar" destination="9VW-G8-jAQ" id="hK2-T9-jDu"/>
+                        <outlet property="view" destination="GDR-Ue-B93" id="M0y-YC-vME"/>
+                        <outletCollection property="addItems" destination="mmG-pK-QjQ" id="CQi-ck-e0I"/>
+                        <outletCollection property="addItems" destination="d7H-YA-vMp" id="ydy-EB-S3Q"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xTV-fi-X0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="-577" y="256"/>
+            <point key="canvasLocation" x="745" y="77"/>
         </scene>
     </scenes>
 </document>

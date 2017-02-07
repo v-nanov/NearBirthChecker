@@ -10,6 +10,13 @@ import Foundation
 import RealmSwift
 
 class Time: Object {
-    dynamic var start: NSDate?
-    dynamic var end: NSDate?
+
+    dynamic var parentSchedule: Schedule?
+
+    dynamic var start: NSDate = .init()
+    dynamic var end: NSDate? = nil
+
+    var progressing: Bool {
+        return nil == end
+    }
 }
