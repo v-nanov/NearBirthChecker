@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KMl-GM-c9J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="aIA-5G-reC">
+            <objects>
+                <navigationController id="KMl-GM-c9J" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8xe-2Z-FPU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="V8J-cI-3Bn" kind="relationship" relationship="rootViewController" id="1hA-8q-okQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbB-UD-RhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="42"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Syb-6N-gmP">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V8J-cI-3Bn" customClass="ViewController" customModule="TimeChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uUZ-KI-gmY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Voa-ce-gai"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDR-Ue-B93">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-L3-CD6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="370-Qj-dtI">
+                                <rect key="frame" x="16" y="629" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.78999892979452058" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="체크">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LWr-L3-CD6" firstAttribute="leading" secondItem="GDR-Ue-B93" secondAttribute="leading" id="4TA-ef-0Nd"/>
+                            <constraint firstItem="Voa-ce-gai" firstAttribute="top" secondItem="LWr-L3-CD6" secondAttribute="bottom" id="EtP-I6-dfN"/>
+                            <constraint firstAttribute="trailing" secondItem="LWr-L3-CD6" secondAttribute="trailing" id="G2I-eb-0EP"/>
+                            <constraint firstItem="Voa-ce-gai" firstAttribute="top" secondItem="370-Qj-dtI" secondAttribute="bottom" constant="8" id="WQG-BJ-MbD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="370-Qj-dtI" secondAttribute="trailing" id="ZNJ-Bn-xfO"/>
+                            <constraint firstItem="370-Qj-dtI" firstAttribute="leading" secondItem="GDR-Ue-B93" secondAttribute="leadingMargin" id="ayD-qe-WVs"/>
+                            <constraint firstItem="LWr-L3-CD6" firstAttribute="top" secondItem="uUZ-KI-gmY" secondAttribute="bottom" id="cUr-se-kLl"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0t0-Gs-6Ex">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Kvp-bm-DLe">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="370-Qj-dtI" id="CHK-js-5rb"/>
+                        <outlet property="textView" destination="LWr-L3-CD6" id="E3r-Mh-xw5"/>
+                        <outlet property="trashItem" destination="Kvp-bm-DLe" id="BJB-GP-GUY"/>
+                        <outlet property="view" destination="GDR-Ue-B93" id="M0y-YC-vME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GY-YP-iOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="42"/>
+        </scene>
+    </scenes>
+</document>

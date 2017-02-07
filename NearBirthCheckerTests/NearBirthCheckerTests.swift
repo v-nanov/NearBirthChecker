@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import NearBirthChecker
+@testable import BabyChecker
 
 class NearBirthCheckerTests: XCTestCase {
     

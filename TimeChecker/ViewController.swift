@@ -13,6 +13,11 @@ class ViewController: UIViewController, Identifierable {
 
     var presenter: SchedulePresenter?
     
+    @IBOutlet weak var textView: UITextView?
+
+    @IBOutlet weak var trashItem: UIBarButtonItem!
+    @IBOutlet weak var addButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = SchedulePresenter(viewer: ScheduleViewer(view: self))

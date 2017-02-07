@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF162FA91E3F853900E91107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FA81E3F853900E91107 /* AppDelegate.swift */; };
+		FF162FAE1E3F853900E91107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF162FAC1E3F853900E91107 /* Main.storyboard */; };
+		FF162FB01E3F853900E91107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF162FAF1E3F853900E91107 /* Assets.xcassets */; };
+		FF162FB31E3F853900E91107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF162FB11E3F853900E91107 /* LaunchScreen.storyboard */; };
+		FF162FBE1E3F853A00E91107 /* NearBirthCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FBD1E3F853A00E91107 /* NearBirthCheckerTests.swift */; };
+		FF162FC91E3F853A00E91107 /* NearBirthCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FC81E3F853A00E91107 /* NearBirthCheckerUITests.swift */; };
+		FF162FDD1E3F86B100E91107 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF162FDC1E3F86B100E91107 /* Time.swift */; };
+		FF162FE11E3F8E2800E91107 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD71E3F869100E91107 /* Realm.framework */; };
+		FF162FE21E3F8E2800E91107 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD71E3F869100E91107 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF162FE31E3F8E2800E91107 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD81E3F869100E91107 /* RealmSwift.framework */; };
+		FF162FE41E3F8E2800E91107 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF162FD81E3F869100E91107 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF470D5D1E47174B00427792 /* ScheduleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D5C1E47174B00427792 /* ScheduleViewer.swift */; };
+		FF470D5F1E47175700427792 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D5E1E47175700427792 /* SchedulePresenter.swift */; };
+		FF470D651E471A5C00427792 /* Identifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D641E471A5C00427792 /* Identifierable.swift */; };
+		FF470D6A1E4749BB00427792 /* VIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF470D691E4749BB00427792 /* VIPER.swift */; };
+		FF5462D51E4A946E006F62DE /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5462D41E4A946E006F62DE /* DateUtils.swift */; };
+		FF5462D81E4A978F006F62DE /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5462D71E4A978F006F62DE /* RealmUtils.swift */; };
+		FFFAFF151E4706A500890062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAFF141E4706A500890062 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF162FBA1E3F853A00E91107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF162F9D1E3F853900E91107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF162FA41E3F853900E91107;
+			remoteInfo = NearBirthChecker;
+		};
+		FF162FC51E3F853A00E91107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF162F9D1E3F853900E91107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF162FA41E3F853900E91107;
+			remoteInfo = NearBirthChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF162FE51E3F8E2800E91107 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF162FE41E3F8E2800E91107 /* RealmSwift.framework in Embed Frameworks */,
+				FF162FE21E3F8E2800E91107 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF162FA51E3F853900E91107 /* TimeChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF162FA81E3F853900E91107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF162FAD1E3F853900E91107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF162FAF1E3F853900E91107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF162FB21E3F853900E91107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF162FB41E3F853900E91107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF162FB91E3F853A00E91107 /* TimeCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF162FBD1E3F853A00E91107 /* NearBirthCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBirthCheckerTests.swift; sourceTree = "<group>"; };
+		FF162FBF1E3F853A00E91107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF162FC41E3F853A00E91107 /* TimeCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF162FC81E3F853A00E91107 /* NearBirthCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBirthCheckerUITests.swift; sourceTree = "<group>"; };
+		FF162FCA1E3F853A00E91107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF162FD71E3F869100E91107 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		FF162FD81E3F869100E91107 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		FF162FDC1E3F86B100E91107 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FF470D5C1E47174B00427792 /* ScheduleViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewer.swift; sourceTree = "<group>"; };
+		FF470D5E1E47175700427792 /* SchedulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
+		FF470D641E471A5C00427792 /* Identifierable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifierable.swift; sourceTree = "<group>"; };
+		FF470D691E4749BB00427792 /* VIPER.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPER.swift; sourceTree = "<group>"; };
+		FF5462D41E4A946E006F62DE /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		FF5462D71E4A978F006F62DE /* RealmUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
+		FF5462DB1E4AEBDE006F62DE /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		FFFAFF141E4706A500890062 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF162FA21E3F853900E91107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF162FE11E3F8E2800E91107 /* Realm.framework in Frameworks */,
+				FF162FE31E3F8E2800E91107 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF162FB61E3F853A00E91107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF162FC11E3F853A00E91107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF162F9C1E3F853900E91107 = {
+			isa = PBXGroup;
+			children = (
+				FF5462DB1E4AEBDE006F62DE /* MyPlayground.playground */,
+				FF162FA71E3F853900E91107 /* TimeChecker */,
+				FF162FBC1E3F853A00E91107 /* NearBirthCheckerTests */,
+				FF162FC71E3F853A00E91107 /* NearBirthCheckerUITests */,
+				FF162FA61E3F853900E91107 /* Products */,
+				FF162FD61E3F868F00E91107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF162FA61E3F853900E91107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF162FA51E3F853900E91107 /* TimeChecker.app */,
+				FF162FB91E3F853A00E91107 /* TimeCheckerTests.xctest */,
+				FF162FC41E3F853A00E91107 /* TimeCheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF162FA71E3F853900E91107 /* TimeChecker */ = {
+			isa = PBXGroup;
+			children = (
+				FF7A5CE31E4A80130071951A /* Utils */,
+				FF470D631E471A3100427792 /* Protocol */,
+				FF470D601E4719FA00427792 /* Schedule */,
+				FF162FDB1E3F86A500E91107 /* Realm */,
+				FF162FA81E3F853900E91107 /* AppDelegate.swift */,
+				FFFAFF141E4706A500890062 /* ViewController.swift */,
+				FF162FAC1E3F853900E91107 /* Main.storyboard */,
+				FF162FAF1E3F853900E91107 /* Assets.xcassets */,
+				FF162FB11E3F853900E91107 /* LaunchScreen.storyboard */,
+				FF162FB41E3F853900E91107 /* Info.plist */,
+			);
+			name = TimeChecker;
+			path = NearBirthChecker;
+			sourceTree = "<group>";
+		};
+		FF162FBC1E3F853A00E91107 /* NearBirthCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF162FBD1E3F853A00E91107 /* NearBirthCheckerTests.swift */,
+				FF162FBF1E3F853A00E91107 /* Info.plist */,
+			);
+			path = NearBirthCheckerTests;
+			sourceTree = "<group>";
+		};
+		FF162FC71E3F853A00E91107 /* NearBirthCheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF162FC81E3F853A00E91107 /* NearBirthCheckerUITests.swift */,
+				FF162FCA1E3F853A00E91107 /* Info.plist */,
+			);
+			path = NearBirthCheckerUITests;
+			sourceTree = "<group>";
+		};
+		FF162FD61E3F868F00E91107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF162FD71E3F869100E91107 /* Realm.framework */,
+				FF162FD81E3F869100E91107 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF162FDB1E3F86A500E91107 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				FF162FDC1E3F86B100E91107 /* Time.swift */,
+				FF5462D71E4A978F006F62DE /* RealmUtils.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		FF470D601E4719FA00427792 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FF470D5C1E47174B00427792 /* ScheduleViewer.swift */,
+				FF470D5E1E47175700427792 /* SchedulePresenter.swift */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		FF470D631E471A3100427792 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FF470D641E471A5C00427792 /* Identifierable.swift */,
+				FF470D691E4749BB00427792 /* VIPER.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		FF7A5CE31E4A80130071951A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF5462D41E4A946E006F62DE /* DateUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF162FA41E3F853900E91107 /* TimeChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF162FCD1E3F853A00E91107 /* Build configuration list for PBXNativeTarget "TimeChecker" */;
+			buildPhases = (
+				FF162FA11E3F853900E91107 /* Sources */,
+				FF162FA21E3F853900E91107 /* Frameworks */,
+				FF162FA31E3F853900E91107 /* Resources */,
+				FF162FE51E3F8E2800E91107 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeChecker;
+			productName = NearBirthChecker;
+			productReference = FF162FA51E3F853900E91107 /* TimeChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF162FB81E3F853A00E91107 /* TimeCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF162FD01E3F853A00E91107 /* Build configuration list for PBXNativeTarget "TimeCheckerTests" */;
+			buildPhases = (
+				FF162FB51E3F853A00E91107 /* Sources */,
+				FF162FB61E3F853A00E91107 /* Frameworks */,
+				FF162FB71E3F853A00E91107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF162FBB1E3F853A00E91107 /* PBXTargetDependency */,
+			);
+			name = TimeCheckerTests;
+			productName = NearBirthCheckerTests;
+			productReference = FF162FB91E3F853A00E91107 /* TimeCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF162FC31E3F853A00E91107 /* TimeCheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF162FD31E3F853A00E91107 /* Build configuration list for PBXNativeTarget "TimeCheckerUITests" */;
+			buildPhases = (
+				FF162FC01E3F853A00E91107 /* Sources */,
+				FF162FC11E3F853A00E91107 /* Frameworks */,
+				FF162FC21E3F853A00E91107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF162FC61E3F853A00E91107 /* PBXTargetDependency */,
+			);
+			name = TimeCheckerUITests;
+			productName = NearBirthCheckerUITests;
+			productReference = FF162FC41E3F853A00E91107 /* TimeCheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF162F9D1E3F853900E91107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hoonhoon;
+				TargetAttributes = {
+					FF162FA41E3F853900E91107 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HY47J4787Q;
+						ProvisioningStyle = Automatic;
+					};
+					FF162FB81E3F853A00E91107 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8S28M84S96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF162FA41E3F853900E91107;
+					};
+					FF162FC31E3F853A00E91107 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8S28M84S96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF162FA41E3F853900E91107;
+					};
+				};
+			};
+			buildConfigurationList = FF162FA01E3F853900E91107 /* Build configuration list for PBXProject "TimeChecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF162F9C1E3F853900E91107;
+			productRefGroup = FF162FA61E3F853900E91107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF162FA41E3F853900E91107 /* TimeChecker */,
+				FF162FB81E3F853A00E91107 /* TimeCheckerTests */,
+				FF162FC31E3F853A00E91107 /* TimeCheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF162FA31E3F853900E91107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF162FB31E3F853900E91107 /* LaunchScreen.storyboard in Resources */,
+				FF162FB01E3F853900E91107 /* Assets.xcassets in Resources */,
+				FF162FAE1E3F853900E91107 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF162FB71E3F853A00E91107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF162FC21E3F853A00E91107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF162FA11E3F853900E91107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF470D6A1E4749BB00427792 /* VIPER.swift in Sources */,
+				FF470D5D1E47174B00427792 /* ScheduleViewer.swift in Sources */,
+				FF470D5F1E47175700427792 /* SchedulePresenter.swift in Sources */,
+				FF470D651E471A5C00427792 /* Identifierable.swift in Sources */,
+				FF5462D51E4A946E006F62DE /* DateUtils.swift in Sources */,
+				FF162FDD1E3F86B100E91107 /* Time.swift in Sources */,
+				FFFAFF151E4706A500890062 /* ViewController.swift in Sources */,
+				FF162FA91E3F853900E91107 /* AppDelegate.swift in Sources */,
+				FF5462D81E4A978F006F62DE /* RealmUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF162FB51E3F853A00E91107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF162FBE1E3F853A00E91107 /* NearBirthCheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF162FC01E3F853A00E91107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF162FC91E3F853A00E91107 /* NearBirthCheckerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF162FBB1E3F853A00E91107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF162FA41E3F853900E91107 /* TimeChecker */;
+			targetProxy = FF162FBA1E3F853A00E91107 /* PBXContainerItemProxy */;
+		};
+		FF162FC61E3F853A00E91107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF162FA41E3F853900E91107 /* TimeChecker */;
+			targetProxy = FF162FC51E3F853A00E91107 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF162FAC1E3F853900E91107 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF162FAD1E3F853900E91107 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF162FB11E3F853900E91107 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF162FB21E3F853900E91107 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF162FCB1E3F853A00E91107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF162FCC1E3F853A00E91107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF162FCE1E3F853A00E91107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HY47J4787Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NearBirthChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onedepth.--PROJECT-NAME-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF162FCF1E3F853A00E91107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HY47J4787Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NearBirthChecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onedepth.--PROJECT-NAME-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF162FD11E3F853A00E91107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8S28M84S96;
+				INFOPLIST_FILE = NearBirthCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeChecker.app/TimeChecker";
+			};
+			name = Debug;
+		};
+		FF162FD21E3F853A00E91107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8S28M84S96;
+				INFOPLIST_FILE = NearBirthCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeChecker.app/TimeChecker";
+			};
+			name = Release;
+		};
+		FF162FD41E3F853A00E91107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8S28M84S96;
+				INFOPLIST_FILE = NearBirthCheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NearBirthChecker;
+			};
+			name = Debug;
+		};
+		FF162FD51E3F853A00E91107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8S28M84S96;
+				INFOPLIST_FILE = NearBirthCheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onedepth.NearBirthCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NearBirthChecker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF162FA01E3F853900E91107 /* Build configuration list for PBXProject "TimeChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF162FCB1E3F853A00E91107 /* Debug */,
+				FF162FCC1E3F853A00E91107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF162FCD1E3F853A00E91107 /* Build configuration list for PBXNativeTarget "TimeChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF162FCE1E3F853A00E91107 /* Debug */,
+				FF162FCF1E3F853A00E91107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF162FD01E3F853A00E91107 /* Build configuration list for PBXNativeTarget "TimeCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF162FD11E3F853A00E91107 /* Debug */,
+				FF162FD21E3F853A00E91107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF162FD31E3F853A00E91107 /* Build configuration list for PBXNativeTarget "TimeCheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF162FD41E3F853A00E91107 /* Debug */,
+				FF162FD51E3F853A00E91107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF162F9D1E3F853900E91107 /* Project object */;
+}
